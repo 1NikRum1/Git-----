@@ -1,8 +1,2 @@
-res://scenes/main/main.tscn
-res://resources/upgrades/ability.gd
-res://scenes/game_object/player_scenes/player.tscn
-res://scenes/sword_ability/sword_ability_controller.tscn
-res://scenes/sword_ability/sword_ability.tscn
 res://scenes/axe_ability/axe_ability_controller.tscn
-res://scenes/axe_ability/axe_ability.tscn
-res://scenes/manager/upgrade_manager.tscn
+res://resources/upgrades/ability.gd

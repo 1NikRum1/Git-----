@@ -1,0 +1,104 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2mhmu06tap4v"]
+
+[ext_resource type="Texture2D" uid="uid://pjrpa1ys4lu1" path="res://assets/sprite/effects/SwordSplash.png" id="1_1wxru"]
+[ext_resource type="Script" path="res://scenes/sword_ability/sword_ability.gd" id="1_rs74h"]
+[ext_resource type="PackedScene" uid="uid://b7hk1xqhvlqan" path="res://scenes/component/hitbox_component.tscn" id="2_vkwpu"]
+
+[sub_resource type="Animation" id="Animation_p8gfc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HitboxComponent/CollisionPolygon2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_0odmj"]
+resource_name = "sword_attack"
+length = 0.21
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.21),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HitboxComponent/CollisionPolygon2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.0002, 0.0003, 0.01, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxeim"]
+_data = {
+"RESET": SubResource("Animation_p8gfc"),
+"sword_attack": SubResource("Animation_0odmj")
+}
+
+[node name="SwordAbility" type="Node2D" groups=["sword_ability"]]
+script = ExtResource("1_rs74h")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "sword_attack"
+libraries = {
+"": SubResource("AnimationLibrary_xxeim")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_1wxru")
+offset = Vector2(-20, 0)
+hframes = 5
+
+[node name="HitboxComponent" parent="." instance=ExtResource("2_vkwpu")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HitboxComponent"]
+position = Vector2(-25, -10)
+polygon = PackedVector2Array(10, -10, -9, -9, -23, -5, -29, 9, -26, 21, -12, 28, 8, 28, 8, 19)
+disabled = true

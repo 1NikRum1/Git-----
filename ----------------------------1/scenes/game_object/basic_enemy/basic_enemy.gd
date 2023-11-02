@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const MAX_SPEED = 50
+const MAX_SPEED = 40
 
 @onready var health_component: HealthComponent = $HealthComponent
 

@@ -1,9 +1,9 @@
+AnimationPlayer
 Node2D
 Node
 CollisionShape2D
 CharacterBody2D
 Sprite2D
-AnimationPlayer
 GPUParticles2D
 Timer
 Label

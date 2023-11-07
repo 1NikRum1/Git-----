@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dpxw37i2vlwg8" path="res://scenes/component/health_component.tscn" id="2_x83s2"]
 [ext_resource type="Texture2D" uid="uid://dt7qo3clbuvgd" path="res://assets/sprite/rus/Ruuuuuuuuuuuus1 (2).png" id="3_ry0wh"]
 
-[sub_resource type="Animation" id="Animation_4eaxs"]
-resource_name = "walk"
+[sub_resource type="Animation" id="Animation_cii6v"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -44,8 +44,8 @@ tracks/2/keys = {
 "values": [Vector2(1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_cii6v"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_4eaxs"]
+resource_name = "walk"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -122,6 +122,7 @@ libraries = {
 }
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_x83s2")]
+max_health = 15.0
 
 [node name="Abilities" type="Node" parent="."]
 

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699354877
+::res://::1699361086
 icon.svg::CompressedTexture2D::3053246244128761817::1698149472::1698678394::1::::<><>::
 ::res://assets/::1698149472
 ::res://assets/sprite/::1698149472
@@ -36,7 +36,7 @@ axe_ability.gd::GDScript::-1::1698443281::0::1::::<>Node2D<>::
 axe_ability.tscn::PackedScene::7572724952958807947::1698918966::0::1::::<><>::res://scenes/axe_ability/axe_ability.gd<>uid://jwnqisam0gyp
 axe_ability_controller.gd::GDScript::-1::1698442319::0::1::::<>Node<>::
 axe_ability_controller.tscn::PackedScene::753030585245940127::1698918965::0::1::::<><>::res://scenes/axe_ability/axe_ability_controller.gd<>uid://df5jw5wvt0v6b
-::res://scenes/component/::1699354882
+::res://scenes/component/::1699358337
 death_component.gd::GDScript::-1::1698943203::0::1::::<>Node2D<>::
 death_component.tscn::PackedScene::1443332953055490439::1699354882::0::1::::<><>::uid://cq237dlu0hd5w::::res://assets/sprite/lizard/Sprite-0001.png<>res://scenes/component/death_component.gd
 health_component.gd::GDScript::-1::1698267333::0::1::::HealthComponent<>Node<>::
@@ -45,29 +45,34 @@ hitbox_component.gd::GDScript::-1::1698149472::0::1::::HitboxComponent<>Area2D<>
 hitbox_component.tscn::PackedScene::4647569158058233557::1698149472::0::1::::<><>::res://scenes/component/hitbox_component.gd
 hurtbox_component.gd::GDScript::-1::1698149472::0::1::::HurtboxComponent<>Area2D<>::
 hurtbox_component.tscn::PackedScene::1028852752588556630::1698149472::0::1::::<><>::res://scenes/component/hurtbox_component.gd
+velocity_component.gd::GDScript::-1::1699357642::0::1::::<>Node<>::
+velocity_component.tscn::PackedScene::6707750047008578969::1699358337::0::1::::<><>::res://scenes/component/velocity_component.gd
 vial_drop_component.gd::GDScript::-1::1698163261::0::1::::<>Node<>::
 vial_drop_component.tscn::PackedScene::5042784033685507951::1698287062::0::1::::<><>::res://scenes/component/vial_drop_component.gd<>uid://ckdelbcky17md
-::res://scenes/game_object/::1698287062
+::res://scenes/game_object/::1699355266
 experience_vial.gd::GDScript::-1::1698149472::0::1::::<>Node2D<>::
 experience_vial.tscn::PackedScene::5481185504833169579::1698287062::0::1::::<><>::uid://c6dp1vxd4tn5v
 EXP_gchiva.png::CompressedTexture2D::6955846977657087053::1698149472::1698287062::1::::<><>::
-::res://scenes/game_object/basic_enemy/::1699354882
-basic_enemy.gd::GDScript::-1::1698943735::0::1::::<>CharacterBody2D<>::
-basic_enemy.tscn::PackedScene::7117005533941584549::1699354882::0::1::::<><>::res://scenes/game_object/basic_enemy/basic_enemy.gd<>uid://cq237dlu0hd5w::::res://assets/sprite/lizard/Sprite-0001.png<>uid://dpxw37i2vlwg8::::res://scenes/component/health_component.tscn<>uid://cd306fhjbronf::::res://scenes/component/vial_drop_component.tscn<>uid://ownb4a1gk3ss::::res://scenes/component/hurtbox_component.tscn<>uid://utfqogpscdkx::::res://scenes/component/death_component.tscn
+::res://scenes/game_object/basic_enemy/::1699358337
+basic_enemy.gd::GDScript::-1::1699358136::0::1::::<>CharacterBody2D<>::
+basic_enemy.tscn::PackedScene::7117005533941584549::1699358337::0::1::::<><>::res://scenes/game_object/basic_enemy/basic_enemy.gd<>uid://cq237dlu0hd5w::::res://assets/sprite/lizard/Sprite-0001.png<>uid://dpxw37i2vlwg8::::res://scenes/component/health_component.tscn<>uid://cd306fhjbronf::::res://scenes/component/vial_drop_component.tscn<>uid://ownb4a1gk3ss::::res://scenes/component/hurtbox_component.tscn<>uid://utfqogpscdkx::::res://scenes/component/death_component.tscn<>uid://c2tjwsy018vs0::::res://scenes/component/velocity_component.tscn
 ::res://scenes/game_object/game_camera/::1698287062
 game_camera.gd::GDScript::-1::1698149472::0::1::::<>Camera2D<>::
 game_camera.tscn::PackedScene::2446491913044607176::1698287062::0::1::::<><>::res://scenes/game_object/game_camera/game_camera.gd
-::res://scenes/game_object/player_scenes/::1699354881
+::res://scenes/game_object/player_scenes/::1699358337
 player.gd::GDScript::-1::1698676443::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3965896871309711979::1699354881::0::1::::<><>::res://scenes/game_object/player_scenes/player.gd<>uid://btql26chra55j::::res://scenes/sword_ability/sword_ability_controller.tscn<>uid://dpxw37i2vlwg8::::res://scenes/component/health_component.tscn<>uid://dt7qo3clbuvgd::::res://assets/sprite/rus/Ruuuuuuuuuuuus1 (2).png
-::res://scenes/main/::1699354881
+player.tscn::PackedScene::3965896871309711979::1699358337::0::1::::<><>::res://scenes/game_object/player_scenes/player.gd<>uid://btql26chra55j::::res://scenes/sword_ability/sword_ability_controller.tscn<>uid://dpxw37i2vlwg8::::res://scenes/component/health_component.tscn<>uid://dt7qo3clbuvgd::::res://assets/sprite/rus/Ruuuuuuuuuuuus1 (2).png
+::res://scenes/game_object/wizard_enemy/::1699358337
+wizard_enemy.gd::GDScript::-1::1699358191::0::1::::<>CharacterBody2D<>::
+wizard_enemy.tscn::PackedScene::5699028174220024519::1699358337::0::1::::<><>::res://scenes/game_object/wizard_enemy/wizard_enemy.gd<>uid://b5co8b8tiaa2s::::res://assets/sprite/lizard/Sprite-0004.png<>uid://dpxw37i2vlwg8::::res://scenes/component/health_component.tscn<>uid://c2tjwsy018vs0::::res://scenes/component/velocity_component.tscn<>uid://utfqogpscdkx::::res://scenes/component/death_component.tscn<>uid://ownb4a1gk3ss::::res://scenes/component/hurtbox_component.tscn<>uid://cd306fhjbronf::::res://scenes/component/vial_drop_component.tscn
+::res://scenes/main/::1699358337
 main.gd::GDScript::-1::1698267333::0::1::::<>Node2D<>::
-main.tscn::PackedScene::4298978947574267253::1699354881::0::1::::<><>::uid://bwrd0h2mmnpyx::::res://scenes/game_object/player_scenes/player.tscn<>res://scenes/main/main.gd<>uid://de30m2b28vsto::::res://scenes/manager/enemy_manager.tscn<>uid://bvbxo6yu14po::::res://assets/tiles/GrassNDirt.png<>uid://cmd03k5o0pgns::::res://scenes/ui/arena_time_ui.tscn<>uid://ba4dmnhh7p2f1::::res://scenes/game_object/game_camera/game_camera.tscn<>uid://bgasyiavlbvx4::::res://scenes/manager/arena_time_manager.tscn<>uid://5ktfsl8wsxk6::::res://assets/tiles/Trees.png<>uid://caynwnfte75ja::::res://scenes/ui/experience_bar.tscn<>uid://ikwsp711tfw6::::res://scenes/ui/end_screen.tscn<>uid://co5dgccom0ly1::::res://scenes/manager/experience_manager.tscn<>uid://8ijoukxqkw83::::res://scenes/manager/upgrade_manager.tscn
-::res://scenes/manager/::1698918966
+main.tscn::PackedScene::4298978947574267253::1699358337::0::1::::<><>::uid://bwrd0h2mmnpyx::::res://scenes/game_object/player_scenes/player.tscn<>res://scenes/main/main.gd<>uid://de30m2b28vsto::::res://scenes/manager/enemy_manager.tscn<>uid://bvbxo6yu14po::::res://assets/tiles/GrassNDirt.png<>uid://cmd03k5o0pgns::::res://scenes/ui/arena_time_ui.tscn<>uid://ba4dmnhh7p2f1::::res://scenes/game_object/game_camera/game_camera.tscn<>uid://bgasyiavlbvx4::::res://scenes/manager/arena_time_manager.tscn<>uid://5ktfsl8wsxk6::::res://assets/tiles/Trees.png<>uid://caynwnfte75ja::::res://scenes/ui/experience_bar.tscn<>uid://ikwsp711tfw6::::res://scenes/ui/end_screen.tscn<>uid://co5dgccom0ly1::::res://scenes/manager/experience_manager.tscn<>uid://8ijoukxqkw83::::res://scenes/manager/upgrade_manager.tscn
+::res://scenes/manager/::1699358337
 arena_time_manager.gd::GDScript::-1::1698267333::0::1::::<>Node<>::
 arena_time_manager.tscn::PackedScene::2808689931600518359::1698267333::0::1::::<><>::res://scenes/manager/arena_time_manager.gd<>uid://ikwsp711tfw6
 enemy_manager.gd::GDScript::-1::1698267333::0::1::::<>Node<>::
-enemy_manager.tscn::PackedScene::7499360778038087476::1698287062::0::1::::<><>::res://scenes/manager/enemy_manager.gd<>uid://c8nsbn1xph4i0
+enemy_manager.tscn::PackedScene::7499360778038087476::1699358337::0::1::::<><>::res://scenes/manager/enemy_manager.gd<>uid://cngwfqtktav3l::::res://scenes/game_object/wizard_enemy/wizard_enemy.tscn
 experience_manager.gd::GDScript::-1::1698157471::0::1::::<>Node<>::
 experience_manager.tscn::PackedScene::5817609485471614782::1698158719::0::1::::<><>::res://scenes/manager/experience_manager.gd
 upgrade_manager.gd::GDScript::-1::1698918965::0::1::::<>Node<>::
@@ -88,3 +93,4 @@ experience_bar.gd::GDScript::-1::1698149472::0::1::::<>CanvasLayer<>::
 experience_bar.tscn::PackedScene::4823215733252993546::1698149472::0::1::::<><>::res://scenes/ui/experience_bar.gd
 upgrade_screen.gd::GDScript::-1::1698161120::0::1::::<>CanvasLayer<>::
 upgrade_screen.tscn::PackedScene::389031307483443912::1698161120::0::1::::<><>::res://scenes/ui/upgrade_screen.gd<>uid://cba5hbrp1cqk3
+::res://scripts/::1699361048

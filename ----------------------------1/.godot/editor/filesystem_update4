@@ -1,11 +1,9 @@
 res://scenes/main/main.tscn
 res://resources/upgrades/ability.gd
-res://scenes/game_object/player_scenes/player.tscn
-res://scenes/game_object/basic_enemy/basic_enemy.tscn
-res://scenes/component/death_component.tscn
-res://scenes/game_object/wizard_enemy/wizard_enemy.tscn
-res://scenes/component/velocity_component.tscn
-res://scenes/component/velocity_component.gd
-res://scenes/game_object/basic_enemy/basic_enemy.gd
-res://scenes/game_object/wizard_enemy/wizard_enemy.gd
+res://scripts/weighted_table.gd
 res://scenes/manager/enemy_manager.tscn
+res://scenes/manager/enemy_manager.gd
+res://scenes/game_object/wizard_enemy/wizard_enemy.tscn
+res://scenes/game_object/basic_enemy/basic_enemy.tscn
+res://scenes/game_object/player_scenes/player.tscn
+res://scenes/component/velocity_component.tscn

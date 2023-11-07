@@ -9,3 +9,5 @@ res://scenes/game_object/player_scenes/player.tscn
 res://scenes/component/velocity_component.tscn
 res://scenes/game_object/wizard_enemy/wizard_enemy.gd
 res://scenes/component/velocity_component.gd
+res://scenes/game_object/experience_vial.gd
+res://scenes/game_object/experience_vial.tscn

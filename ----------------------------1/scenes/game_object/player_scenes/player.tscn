@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://scenes/game_object/player_scenes/player.gd" id="1_rh871"]
 [ext_resource type="PackedScene" uid="uid://btql26chra55j" path="res://scenes/sword_ability/sword_ability_controller.tscn" id="2_vvfxw"]
 [ext_resource type="PackedScene" uid="uid://dpxw37i2vlwg8" path="res://scenes/component/health_component.tscn" id="2_x83s2"]
-[ext_resource type="Texture2D" uid="uid://dt7qo3clbuvgd" path="res://assets/sprite/rus/Ruuuuuuuuuuuus1 (2).png" id="3_ry0wh"]
+[ext_resource type="Texture2D" uid="uid://dgf5silehj4ub" path="res://assets/sprite/rus/Ruuuuuuuuuuuus1_Animation.png" id="4_66rra"]
 
 [sub_resource type="Animation" id="Animation_cii6v"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath("Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -21,7 +21,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
+tracks/1/enabled = false
 tracks/1/path = NodePath("Sprite2D:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -33,7 +33,7 @@ tracks/1/keys = {
 }
 tracks/2/type = "value"
 tracks/2/imported = false
-tracks/2/enabled = true
+tracks/2/enabled = false
 tracks/2/path = NodePath("Sprite2D:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
@@ -43,9 +43,23 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(1, 1)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_4eaxs"]
 resource_name = "walk"
+length = 0.62
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -81,6 +95,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:frame")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vichq"]
@@ -155,8 +181,9 @@ position = Vector2(0, 5)
 shape = SubResource("CircleShape2D_jl34p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_ry0wh")
+texture = ExtResource("4_66rra")
 offset = Vector2(0, 5)
+hframes = 5
 
 [node name="CollisionArea2D" type="Area2D" parent="."]
 visible = false

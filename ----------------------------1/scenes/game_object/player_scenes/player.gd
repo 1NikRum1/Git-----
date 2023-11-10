@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var health_component = $HealthComponent
 @onready var health_bar = $HealthBar
 @onready var abilities = $Abilities
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 
 const MAX_SPEED = 125
 const ACCELERATION_SMOOTHING = 25
@@ -30,6 +32,11 @@ func _process(delta: float) -> void:
 	
 	move_and_slide()
 	
+	if movement_vector.x != 0 || movement_vector.y != 0:
+		animation_player.play("walk")
+	else:
+		animation_player.play("RESET")
+		
 
 func get_movement_vector():
 	#var movement_vector = Vector2.ZERO

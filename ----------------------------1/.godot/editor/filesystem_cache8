@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700394213
+::res://::1700657310
 icon.svg::CompressedTexture2D::3053246244128761817::1698149472::1698678394::1::::<><>::
 ::res://assets/::1698149472
 ::res://assets/sprite/::1698149472
@@ -25,9 +25,9 @@ Trees.png::CompressedTexture2D::2127472602456310559::1698149472::1698149700::1::
 ::res://resources/::1700393944
 ::res://resources/theme/::1700394146
 Rockboxcond12.ttf::FontFile::9037736274301143711::1700393846::1700394044::1::::<><>::
-theme.tres::Theme::1467230455128795941::1700394146::0::1::::<><>::uid://d107gwt5qc8al::::res://resources/theme/Rockboxcond12.ttf
-::res://resources/upgrades/::1700394146
-ability.gd::GDScript::-1::1700394146::0::1::::Ability<>AbilityUpgrade<>::
+theme.tres::Theme::1467230455128795941::1700394146::0::1::::<><>::uid://d107gwt5qc8al
+::res://resources/upgrades/::1700477646
+ability.gd::GDScript::-1::1700477646::0::1::::Ability<>AbilityUpgrade<>::
 ability_upgrade.gd::GDScript::-1::1698918417::0::1::::AbilityUpgrade<>Resource<>::
 axe.tres::Resource/Resource::2280461465616593501::1698918417::0::1::::<><>::uid://ky1kldn1nuol
 sword_rate.tres::Resource/Resource::8843863931469346352::1698918848::0::1::::<><>::res://resources/upgrades/ability_upgrade.gd
@@ -69,9 +69,9 @@ player.tscn::PackedScene::3965896871309711979::1699644742::0::1::::<><>::res://s
 ::res://scenes/game_object/wizard_enemy/::1699644742
 wizard_enemy.gd::GDScript::-1::1699364630::0::1::::<>CharacterBody2D<>::
 wizard_enemy.tscn::PackedScene::5699028174220024519::1699644742::0::1::::<><>::res://scenes/game_object/wizard_enemy/wizard_enemy.gd<>uid://b5co8b8tiaa2s
-::res://scenes/main/::1700394146
+::res://scenes/main/::1700477646
 main.gd::GDScript::-1::1698267333::0::1::::<>Node2D<>::
-main.tscn::PackedScene::4298978947574267253::1700394146::0::1::::<><>::uid://bwrd0h2mmnpyx::::res://scenes/game_object/player_scenes/player.tscn<>res://scenes/main/main.gd<>uid://de30m2b28vsto::::res://scenes/manager/enemy_manager.tscn<>uid://bvbxo6yu14po::::res://assets/tiles/GrassNDirt.png<>uid://cmd03k5o0pgns::::res://scenes/ui/arena_time_ui.tscn<>uid://ba4dmnhh7p2f1::::res://scenes/game_object/game_camera/game_camera.tscn<>uid://bgasyiavlbvx4::::res://scenes/manager/arena_time_manager.tscn<>uid://5ktfsl8wsxk6::::res://assets/tiles/Trees.png<>uid://caynwnfte75ja::::res://scenes/ui/experience_bar.tscn<>uid://ikwsp711tfw6::::res://scenes/ui/end_screen.tscn<>uid://co5dgccom0ly1::::res://scenes/manager/experience_manager.tscn<>uid://8ijoukxqkw83::::res://scenes/manager/upgrade_manager.tscn
+main.tscn::PackedScene::4298978947574267253::1700477646::0::1::::<><>::uid://bwrd0h2mmnpyx::::res://scenes/game_object/player_scenes/player.tscn<>res://scenes/main/main.gd<>uid://de30m2b28vsto::::res://scenes/manager/enemy_manager.tscn<>uid://bvbxo6yu14po::::res://assets/tiles/GrassNDirt.png<>uid://cmd03k5o0pgns::::res://scenes/ui/arena_time_ui.tscn<>uid://ba4dmnhh7p2f1::::res://scenes/game_object/game_camera/game_camera.tscn<>uid://bgasyiavlbvx4::::res://scenes/manager/arena_time_manager.tscn<>uid://5ktfsl8wsxk6::::res://assets/tiles/Trees.png<>uid://caynwnfte75ja::::res://scenes/ui/experience_bar.tscn<>uid://ikwsp711tfw6::::res://scenes/ui/end_screen.tscn<>uid://co5dgccom0ly1::::res://scenes/manager/experience_manager.tscn<>uid://8ijoukxqkw83::::res://scenes/manager/upgrade_manager.tscn
 ::res://scenes/manager/::1699644742
 arena_time_manager.gd::GDScript::-1::1698267333::0::1::::<>Node<>::
 arena_time_manager.tscn::PackedScene::2808689931600518359::1698267333::0::1::::<><>::res://scenes/manager/arena_time_manager.gd<>uid://ikwsp711tfw6
@@ -86,11 +86,11 @@ sword_ability.gd::GDScript::-1::1698149472::0::1::::SwordAbility<>Node2D<>::
 sword_ability.tscn::PackedScene::4306739533965936891::1698918965::0::1::::<><>::uid://pjrpa1ys4lu1
 sword_ability_controller.gd::GDScript::-1::1698267333::0::1::::<>Node<>::
 sword_ability_controller.tscn::PackedScene::3753756491890800749::1698918965::0::1::::<><>::res://scenes/sword_ability/sword_ability_controller.gd<>uid://b2mhmu06tap4v
-::res://scenes/ui/::1698267333
+::res://scenes/ui/::1700477646
 ability_upgrade_card.gd::GDScript::-1::1698161120::0::1::::<>PanelContainer<>::
 ability_upgrade_card.tscn::PackedScene::4844864300865961472::1698161120::0::1::::<><>::res://scenes/ui/ability_upgrade_card.gd
 arena_time_ui.gd::GDScript::-1::1698149472::0::1::::<>CanvasLayer<>::
-arena_time_ui.tscn::PackedScene::5622869123601003948::1698149472::0::1::::<><>::res://scenes/ui/arena_time_ui.gd
+arena_time_ui.tscn::PackedScene::5622869123601003948::1700477646::0::1::::<><>::res://scenes/ui/arena_time_ui.gd
 end_screen.gd::GDScript::-1::1698267333::0::1::::<>CanvasLayer<>::
 end_screen.tscn::PackedScene::583523283276819735::1698267333::0::1::::<><>::res://scenes/ui/end_screen.gd
 experience_bar.gd::GDScript::-1::1698149472::0::1::::<>CanvasLayer<>::

@@ -1,3 +1,7 @@
-res://scenes/main/main.tscn
 res://resources/upgrades/ability.gd
-res://resources/theme/theme.tres
+res://scenes/ui/floating_text.tscn
+res://scenes/ui/floating_text.gd
+res://scenes/main/main.tscn
+res://scenes/component/hurtbox_component.gd
+res://scenes/ui/arena_time_ui.tscn
+res://scenes/component/hurtbox_component.tscn
